@@ -1,10 +1,26 @@
-<script>
-window.location.href = "https://link-center.net/1261812/08"; // Linkvertise 광고 페이지로 이동
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <script>
+        window.onload = function() {
+            // Linkvertise 광고 페이지로 이동
+            window.location.href = "https://link-center.net/1261812/08";
 
-setTimeout(function() {
-    let button = document.querySelector(".action-box__cta-button.lv-lib-button--primary");
-    if (button) {
-        button.click(); // 광고 버튼 자동 클릭
-    }
-}, 3000); // 3초 후 실행 (필요시 조정)
-</script>
+            // 3초 후 버튼 자동 클릭
+            setTimeout(function() {
+                let button = document.querySelector(".action-box__cta-button.lv-lib-button--primary");
+                if (button) {
+                    button.click();
+                }
+            }, 3000);
+        };
+    </script>
+</head>
+<body>
+    <h1>잠시만 기다려 주세요...</h1>
+    <p>광고 페이지로 이동 중입니다.</p>
+</body>
+</html>
